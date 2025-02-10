@@ -1,6 +1,8 @@
 import { resolve } from "node:path"
+import { VantResolver } from "@vant/auto-import-resolver"
 import vue from "@vitejs/plugin-vue"
 import AutoImport from "unplugin-auto-import/vite"
+import Components from "unplugin-vue-components/vite"
 import { defineConfig, loadEnv } from "vite"
 
 // Configuring Vite: https://cn.vite.dev/config
@@ -86,7 +88,13 @@ export default defineConfig(({ mode }) => {
       // 自动按需导入 API
       AutoImport({
         imports: ["vue", "vue-router", "pinia"],
-        dts: "types/auto/auto-imports.d.ts"
+        dts: "types/auto/auto-imports.d.ts",
+        resolvers: [VantResolver()]
+      }),
+      // 自动按需导入组件
+      Components({
+        dts: "types/auto/components.d.ts",
+        resolvers: [VantResolver()]
       })
     ]
   }
