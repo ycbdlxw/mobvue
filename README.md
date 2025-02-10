@@ -12,7 +12,7 @@ A crafted mobile template built with mobile + vue
 - 新版 `Visual Studio Code`
 - 安装 `.vscode/extensions.json` 文件中推荐的插件
 - `node` 20.x 或 22+
-- `pnpm` 9+
+- `pnpm` 9.x 或 10+
 
 </details>
 
@@ -116,3 +116,7 @@ pnpm lint
 **ESlint**：代码校验与格式化
 
 **Axios**：发送网络请求（已封装好）
+
+## License
+
+[MIT](./LICENSE) License © 2025-PRESENT [pany](https://github.com/pany-ang)
