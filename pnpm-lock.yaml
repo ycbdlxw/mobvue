@@ -60,6 +60,9 @@ importers:
       lint-staged:
         specifier: 15.4.3
         version: 15.4.3
+      postcss-mobile-forever:
+        specifier: 4.3.2
+        version: 4.3.2(postcss@8.5.1)
       sass:
         specifier: 1.78.0
         version: 1.78.0
@@ -2139,6 +2142,11 @@ packages:
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
+
+  postcss-mobile-forever@4.3.2:
+    resolution: {integrity: sha512-l1YuvxouJ7wt2awKtomuTDKXkNlFcUvC62sVUD9+Gr2AdyZRTtP81izo/IHfS2fbbFCY5JzvuTGmAJ2SyEqv+w==}
+    peerDependencies:
+      postcss: ^8.0.0
 
   postcss-selector-parser@6.1.2:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
@@ -4846,6 +4854,10 @@ snapshots:
       pathe: 2.0.2
 
   pluralize@8.0.0: {}
+
+  postcss-mobile-forever@4.3.2(postcss@8.5.1):
+    dependencies:
+      postcss: 8.5.1
 
   postcss-selector-parser@6.1.2:
     dependencies:
