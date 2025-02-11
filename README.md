@@ -9,7 +9,7 @@
 
 ## 简介
 
-A crafted mobile template built with mobile + vue
+MobVue 是一个精心制作的移动端 H5 模板，基于 Vue3、Vite、TypeScript、Vant 等主流技术
 
 ## 使用
 
