@@ -6,7 +6,7 @@ import { router } from "@/router"
 import App from "@/App.vue"
 // css
 import "normalize.css"
-import "@@/assets/styles/index.scss"
+import "@@/assets/styles/index.css"
 
 // 创建应用实例
 const app = createApp(App)
