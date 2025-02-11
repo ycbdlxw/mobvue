@@ -11,6 +11,11 @@
 
 MobVue 是一个精心制作的移动端 H5 模板，基于 Vue3、Vite、TypeScript、Vant 等主流技术
 
+## 通知
+
+> [!WARNING]
+> 作者正在努力开发中...敬请期待 1.0 版本发布！
+
 ## 使用
 
 <details>
