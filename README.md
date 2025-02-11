@@ -1,3 +1,12 @@
+<div align="center">
+  <img alt="logo" width="120" height="120" src="./public/favicon.png">
+  <h1>MobVue</h1>
+</div>
+
+[![github release](https://img.shields.io/github/v/release/un-pany/mobvue?style=flat)](https://github.com/un-pany/mobvue/releases)
+[![github stars](https://img.shields.io/github/stars/un-pany/mobvue?style=flat)](https://github.com/un-pany/mobvue/stargazers)
+[![gitee stars](https://gitee.com/un-pany/mobvue/badge/star.svg)](https://gitee.com/un-pany/mobvue/stargazers)
+
 ## 简介
 
 A crafted mobile template built with mobile + vue
