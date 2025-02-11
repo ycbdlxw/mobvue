@@ -7,6 +7,7 @@ import App from "@/App.vue"
 // css
 import "normalize.css"
 import "@@/assets/styles/index.css"
+import "virtual:uno.css"
 
 // 创建应用实例
 const app = createApp(App)

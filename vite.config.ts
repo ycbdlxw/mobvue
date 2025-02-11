@@ -1,6 +1,7 @@
 import { resolve } from "node:path"
 import { VantResolver } from "@vant/auto-import-resolver"
 import vue from "@vitejs/plugin-vue"
+import UnoCSS from "unocss/vite"
 import AutoImport from "unplugin-auto-import/vite"
 import Components from "unplugin-vue-components/vite"
 import { defineConfig, loadEnv } from "vite"
@@ -85,6 +86,8 @@ export default defineConfig(({ mode }) => {
     // 插件配置
     plugins: [
       vue(),
+      // 原子化 CSS
+      UnoCSS(),
       // 自动按需导入 API
       AutoImport({
         imports: ["vue", "vue-router", "pinia"],
