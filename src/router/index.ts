@@ -2,6 +2,10 @@ import type { RouteRecordRaw } from "vue-router"
 import { registerNavigationGuard } from "@/router/guard"
 import { createRouter, createWebHashHistory, createWebHistory } from "vue-router"
 
+const VITE_PUBLIC_PATH = import.meta.env.VITE_PUBLIC_PATH
+
+const VITE_ROUTER_HISTORY = import.meta.env.VITE_ROUTER_HISTORY
+
 export const routes: RouteRecordRaw[] = [
   {
     path: "/",
@@ -14,9 +18,8 @@ export const routes: RouteRecordRaw[] = [
 ]
 
 /** 路由实例 */
-const VITE_PUBLIC_PATH = import.meta.env.VITE_PUBLIC_PATH
 export const router = createRouter({
-  history: import.meta.env.VITE_ROUTER_HISTORY === "hash" ? createWebHashHistory(VITE_PUBLIC_PATH) : createWebHistory(VITE_PUBLIC_PATH),
+  history: VITE_ROUTER_HISTORY === "hash" ? createWebHashHistory(VITE_PUBLIC_PATH) : createWebHistory(VITE_PUBLIC_PATH),
   routes
 })
 
