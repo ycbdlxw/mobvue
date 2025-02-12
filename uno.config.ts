@@ -11,7 +11,9 @@ export default defineConfig({
     })
   ],
   // 自定义规则
-  rules: [["uno-padding-20", { padding: "20px" }]],
+  rules: [
+    ["uno-padding-20", { padding: "20px" }]
+  ],
   // 自定义快捷方式
   shortcuts: {
     "uno-wh-full": "w-full h-full",
