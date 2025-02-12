@@ -1,3 +1,4 @@
+import presetRemToPx from "@unocss/preset-rem-to-px"
 import { defineConfig, presetAttributify, presetUno } from "unocss"
 
 export default defineConfig({
@@ -8,7 +9,9 @@ export default defineConfig({
     // 默认预设
     presetUno({
       important: "#app"
-    })
+    }),
+    // 将 unocss 默认采用的 rem 单位转为 px 单位
+    presetRemToPx()
   ],
   // 自定义规则
   rules: [
