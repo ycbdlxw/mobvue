@@ -1,3 +1,5 @@
+/// <reference types="vitest/config" />
+
 import { resolve } from "node:path"
 import { VantResolver } from "@vant/auto-import-resolver"
 import vue from "@vitejs/plugin-vue"
@@ -99,6 +101,16 @@ export default defineConfig(({ mode }) => {
         dts: "types/auto/components.d.ts",
         resolvers: [VantResolver()]
       })
-    ]
+    ],
+    // Configuring Vitest: https://cn.vitest.dev/config
+    test: {
+      include: ["tests/**/*.test.{ts,js}"],
+      environment: "happy-dom",
+      server: {
+        deps: {
+          inline: ["vant"]
+        }
+      }
+    }
   }
 })
