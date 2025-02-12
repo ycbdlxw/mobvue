@@ -1,6 +1,9 @@
 // 修改配置后重启服务生效
 export default {
   plugins: {
+    // 自动添加浏览器前缀
+    "autoprefixer": {},
+    // 移动端适配插件
     "postcss-mobile-forever": {
       // UI 设计稿宽度
       viewportWidth: (file: string) => file.includes("vant") ? 375 : 750,
