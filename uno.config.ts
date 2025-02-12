@@ -17,7 +17,12 @@ export default defineConfig({
     presetRemToPx()
   ],
   // 自定义规则
-  rules: [],
+  rules: [
+    ["clearfix", { content: "''", display: "table", clear: "both" }],
+    ["no-select", { "user-select": "none", "touch-action": "none" }],
+    ["ellipsis", { "white-space": "nowrap", "overflow": "hidden", "text-overflow": "ellipsis" }],
+    [/^multi-ellipsis-(\d+)$/, ([, d]) => ({ "display": "-webkit-box", "-webkit-line-clamp": d, "-webkit-box-orient": "vertical", "overflow": "hidden", "text-overflow": "ellipsis" })]
+  ],
   // 自定义快捷方式
   shortcuts: {
     "wh-full": "w-full h-full",
