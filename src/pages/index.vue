@@ -1,4 +1,4 @@
-<script lang="ts" setup></script>
+<script setup lang="ts"></script>
 
 <template>
   <div h-full flex select-none pa-20px text-center all:transition-400>
