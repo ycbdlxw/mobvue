@@ -12,7 +12,17 @@ export const routes: RouteRecordRaw[] = [
     component: () => import("@/pages/index.vue"),
     name: "Index",
     meta: {
-      title: "首页"
+      title: "首页",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: false
+        },
+        tabbar: {
+          showTabbar: true,
+          icon: "home-o"
+        }
+      }
     }
   }
 ]
