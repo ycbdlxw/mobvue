@@ -2,6 +2,7 @@
 import { router } from "@/router"
 
 interface Props {
+  title: string
   path: string
 }
 
@@ -27,7 +28,7 @@ function onClick() {
     un-transition-opacity-300
     un-active-opacity-60
   >
-    <span>标题</span>
+    <span>{{ props.title }}</span>
     <van-icon name="arrow" color="#B6C3D2" />
   </div>
 </template>

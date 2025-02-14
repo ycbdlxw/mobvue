@@ -27,10 +27,41 @@ export const routes: RouteRecordRaw[] = [
   }
 ]
 
+export const demoRoutes: RouteRecordRaw[] = [
+  {
+    path: "/demo1",
+    component: () => import("@/pages/demo/demo1.vue"),
+    name: "Demo1",
+    meta: {
+      title: "示例1",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: true
+        }
+      }
+    }
+  },
+  {
+    path: "/demo2",
+    component: () => import("@/pages/demo/demo2.vue"),
+    name: "Demo2",
+    meta: {
+      title: "示例2",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: true
+        }
+      }
+    }
+  }
+]
+
 /** 路由实例 */
 export const router = createRouter({
   history: VITE_ROUTER_HISTORY === "hash" ? createWebHashHistory(VITE_PUBLIC_PATH) : createWebHistory(VITE_PUBLIC_PATH),
-  routes
+  routes: [...routes, ...demoRoutes]
 })
 
 // 注册路由导航守卫

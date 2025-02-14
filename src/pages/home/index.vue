@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { demoRoutes } from "@/router"
 import Cell from "./components/Cell.vue"
 </script>
 
@@ -17,7 +18,13 @@ import Cell from "./components/Cell.vue"
       <span un-pl-16px un-color-hex-969799 un-text-14px un-fw400>
         示例集合
       </span>
-      <Cell path="/" un-mt-12px />
+      <Cell
+        v-for="route in demoRoutes"
+        :key="route.path"
+        :title="route.meta?.title || ''"
+        :path="route.path"
+        un-mt-12px
+      />
     </div>
   </div>
 </template>
