@@ -9,13 +9,13 @@ const VITE_ROUTER_HISTORY = import.meta.env.VITE_ROUTER_HISTORY
 export const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    component: () => import("@/pages/index.vue"),
-    name: "Index",
+    component: () => import("@/pages/home/index.vue"),
+    name: "Home",
     meta: {
       title: "首页",
       layout: {
         navBar: {
-          showNavBar: true,
+          showNavBar: false,
           showLeftArrow: false
         },
         tabbar: {

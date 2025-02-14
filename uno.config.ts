@@ -25,7 +25,9 @@ export default defineConfig({
     // use un-ellipsis
     ["ellipsis", { "white-space": "nowrap", "overflow": "hidden", "text-overflow": "ellipsis" }],
     // use un-multi-ellipsis-2
-    [/^multi-ellipsis-(\d+)$/, ([, d]) => ({ "display": "-webkit-box", "-webkit-line-clamp": d, "-webkit-box-orient": "vertical", "overflow": "hidden", "text-overflow": "ellipsis" })]
+    [/^multi-ellipsis-(\d+)$/, ([, d]) => ({ "display": "-webkit-box", "-webkit-line-clamp": d, "-webkit-box-orient": "vertical", "overflow": "hidden", "text-overflow": "ellipsis" })],
+    // use un-color-hex-000000
+    [/^color-hex-(.+)$/, ([, color]) => ({ color: `#${color}` })]
   ],
   // 自定义快捷方式
   shortcuts: {
