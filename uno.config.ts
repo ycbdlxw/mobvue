@@ -18,13 +18,13 @@ export default defineConfig({
   ],
   // 自定义规则
   rules: [
-    // use class="after-clearfix"
+    // use un-after-clearfix
     ["clearfix", { content: "''", display: "table", clear: "both" }],
-    // use class="no-select"
+    // use un-no-select
     ["no-select", { "user-select": "none", "touch-action": "none" }],
-    // use class="ellipsis"
+    // use un-ellipsis
     ["ellipsis", { "white-space": "nowrap", "overflow": "hidden", "text-overflow": "ellipsis" }],
-    // use class="multi-ellipsis-2"
+    // use un-multi-ellipsis-2
     [/^multi-ellipsis-(\d+)$/, ([, d]) => ({ "display": "-webkit-box", "-webkit-line-clamp": d, "-webkit-box-orient": "vertical", "overflow": "hidden", "text-overflow": "ellipsis" })]
   ],
   // 自定义快捷方式

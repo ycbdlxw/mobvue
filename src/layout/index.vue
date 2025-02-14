@@ -10,9 +10,9 @@ const showTabbar = computed(() => route.meta.layout?.tabbar?.showTabbar)
 </script>
 
 <template>
-  <div class="h-full flex flex-col">
+  <div un-h-full un-flex un-flex-col>
     <NavBar v-if="showNavBar" />
-    <div class="flex-1 overflow-y-auto">
+    <div un-flex-1 un-overflow-y-auto>
       <router-view />
     </div>
     <Tabbar v-if="showTabbar" />

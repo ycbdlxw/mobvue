@@ -15,6 +15,6 @@ function onClickLeft() {
     :title="title"
     :left-arrow="showLeftArrow"
     @click-left="onClickLeft"
-    safe-area-inset-top placeholder fixed
+    placeholder safe-area-inset-top fixed
   />
 </template>
