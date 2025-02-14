@@ -6,7 +6,7 @@ export default {
     // 移动端适配插件
     "postcss-mobile-forever": {
       // UI 设计稿宽度
-      viewportWidth: (file: string) => file.includes("vant") ? 375 : 750,
+      viewportWidth: (file: string) => file.includes("vant") ? 375 : 375,
       // 限制视图的最大宽度
       maxDisplayWidth: 750,
       // 页面最外层选择器
