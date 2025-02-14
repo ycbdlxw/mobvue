@@ -24,6 +24,24 @@ export const routes: RouteRecordRaw[] = [
         }
       }
     }
+  },
+  {
+    path: "/me",
+    component: () => import("@/pages/me/index.vue"),
+    name: "Me",
+    meta: {
+      title: "我的",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: false
+        },
+        tabbar: {
+          showTabbar: true,
+          icon: "user-o"
+        }
+      }
+    }
   }
 ]
 
