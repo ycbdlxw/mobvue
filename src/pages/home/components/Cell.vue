@@ -31,5 +31,3 @@ function onClick() {
     <van-icon name="arrow" color="#B6C3D2" />
   </div>
 </template>
-
-<style scoped></style>
