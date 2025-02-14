@@ -12,7 +12,7 @@ const tabbarItemList = computed(() => {
 </script>
 
 <template>
-  <van-tabbar route safe-area-inset-bottom placeholder fixed>
+  <van-tabbar placeholder route safe-area-inset-bottom fixed>
     <van-tabbar-item
       v-for="item in tabbarItemList"
       :key="item.path"
