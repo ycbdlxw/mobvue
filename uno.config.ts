@@ -7,7 +7,7 @@ export default defineConfig({
     // 属性化模式 & 无值的属性模式
     presetAttributify({
       prefix: "un-",
-      prefixedOnly: false
+      prefixedOnly: true
     }),
     // 默认预设
     presetUno({
