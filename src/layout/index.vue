@@ -18,5 +18,3 @@ const showTabbar = computed(() => route.meta.layout?.tabbar?.showTabbar)
     <Tabbar v-if="showTabbar" />
   </div>
 </template>
-
-<style scoped></style>
