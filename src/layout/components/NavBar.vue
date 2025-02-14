@@ -14,7 +14,9 @@ function onClickLeft() {
   <van-nav-bar
     :title="title"
     :left-arrow="showLeftArrow"
+    fixed
+    placeholder
+    safe-area-inset-top
     @click-left="onClickLeft"
-    safe-area-inset-top placeholder fixed
   />
 </template>

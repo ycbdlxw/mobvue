@@ -5,8 +5,6 @@ export default antfu(
   {
     // 使用外部格式化程序格式化 css、html、markdown 等文件
     formatters: true,
-    // 格式化 unocss 代码
-    unocss: true,
     // 启用样式规则
     stylistic: {
       // 缩进级别
