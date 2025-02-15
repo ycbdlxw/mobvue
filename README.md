@@ -124,15 +124,19 @@ pnpm lint
 
 ## 特性
 
-📍 纯一级路由设计, 清晰且缓存友好
+🔥 最新的 [语法](https://vuejs.org/api/sfc-script-setup.html)、[配置](./vite.config.ts)、[依赖](./package.json)
 
-🔧 组件和 API 自动按需导入
+📍 [纯一级路由设计](./src/router/index.ts) - 清晰且缓存友好
 
-🎨 拥抱原子化 CSS
+🧩 [布局系统](./src/layout) - 配置化的
 
-🔎 单元测试护航
+🔧 [组件](https://github.com/unplugin/unplugin-vue-components) 和 [API](https://github.com/unplugin/unplugin-auto-import) 自动按需导入
 
-🔥 依然 TypeScript
+🎨 [拥抱原子化 CSS](./uno.config.ts)
+
+🔎 [单元测试护航](./tests)
+
+💪🏻 依然 [TypeScript](./tsconfig.json)
 
 ## 技术栈
 
@@ -147,8 +151,6 @@ pnpm lint
 **TypeScript**：JavaScript 语言的超集
 
 **pnpm**：更快速的，节省磁盘空间的包管理工具
-
-**CSS 变量**：主要控制项目的布局和颜色
 
 **ESlint**：代码校验与格式化
 
