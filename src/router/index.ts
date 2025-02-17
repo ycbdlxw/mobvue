@@ -47,11 +47,12 @@ export const routes: RouteRecordRaw[] = [
 
 export const demoRoutes: RouteRecordRaw[] = [
   {
-    path: "/demo1",
-    component: () => import("@/pages/demo/demo1.vue"),
-    name: "Demo1",
+    path: "/keep-alive",
+    component: () => import("@/pages/demo/keep-alive.vue"),
+    name: "KeepAlive",
     meta: {
-      title: "示例1",
+      title: "路由缓存",
+      keepAlive: true,
       layout: {
         navBar: {
           showNavBar: true,

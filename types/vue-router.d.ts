@@ -9,6 +9,11 @@ declare module "vue-router" {
      */
     title?: string
     /**
+     * @description 是否缓存该路由页面，注意路由和页面都需要设置一致的 Name
+     * @default false
+     */
+    keepAlive?: boolean
+    /**
      * @description 布局配置
      */
     layout?: {
