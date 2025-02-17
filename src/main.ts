@@ -8,6 +8,7 @@ import App from "@/App.vue"
 import "@vant/touch-emulator"
 // css
 import "normalize.css"
+import "nprogress/nprogress.css"
 import "@@/assets/styles/index.css"
 import "virtual:uno.css"
 
