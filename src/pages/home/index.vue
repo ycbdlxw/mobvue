@@ -25,6 +25,7 @@ import Cell from "./components/Cell.vue"
         :path="route.path"
         un-mt-12px
       />
+      <van-divider>🔥 更多优秀示例，期待你的 PR 👏🏻</van-divider>
     </div>
   </div>
 </template>
