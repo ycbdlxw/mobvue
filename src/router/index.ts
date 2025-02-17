@@ -62,11 +62,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     }
   },
   {
-    path: "/demo2",
-    component: () => import("@/pages/demo/demo2.vue"),
-    name: "Demo2",
+    path: "/watermark",
+    component: () => import("@/pages/demo/watermark.vue"),
+    name: "Watermark",
     meta: {
-      title: "示例2",
+      title: "带防御的水印",
       layout: {
         navBar: {
           showNavBar: true,

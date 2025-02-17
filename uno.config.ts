@@ -16,6 +16,12 @@ export default defineConfig({
     // 将 unocss 默认采用的 rem 单位转为 px 单位
     presetRemToPx()
   ],
+  // 自定义主题
+  theme: {
+    colors: {
+      primary: "var(--mobvue-primary-color)"
+    }
+  },
   // 自定义规则
   rules: [
     // use un-after-clearfix

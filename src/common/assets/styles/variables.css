@@ -1,6 +1,8 @@
 /* 全局 CSS 变量，这种变量不仅可以在 CSS 中使用，还可以导入到 JS 中使用 */
 
 :root {
+  /* 主题色 */
+  --mobvue-primary-color: #1989fa;
   /* Body */
   --mobvue-body-text-color: #323233;
   --mobvue-body-bg-color: #f7f8fa;
