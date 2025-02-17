@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useWatermark } from "@@/composables/useWatermark"
+import NoticeBar from "./components/NoticeBar.vue"
 
 const localRef = ref<HTMLElement | null>(null)
 
@@ -10,12 +11,7 @@ const { setWatermark: setGlobalWatermark, clearWatermark: clearGlobalWatermark }
 
 <template>
   <div>
-    <van-notice-bar
-      color="var(--mobvue-primary-color)"
-      background="#ecf9ff"
-      left-icon="bulb-o"
-      text="支持局部、全局、自定义样式，并自带防御和自适应功能"
-    />
+    <NoticeBar text="支持局部、全局、自定义样式，并自带防御和自适应功能" />
     <div
       ref="localRef"
       class="local"
