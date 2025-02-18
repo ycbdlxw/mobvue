@@ -49,11 +49,12 @@ function onSubmit() {
           :rules="[{ required: true, message: '请填写密码' }]"
         />
       </van-cell-group>
-      <div un-mx-16px un-my-24px>
+      <div un-mx-16px un-my-32px>
         <van-button
           :loading="loading"
           type="primary"
           native-type="submit"
+          size="large"
           round
           block
         >
