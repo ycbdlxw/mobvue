@@ -37,6 +37,7 @@ function onSubmit() {
           v-model="loginFormData.username"
           name="username"
           label="用户名"
+          size="large"
           :rules="[{ required: true, message: '请填写用户名' }]"
         />
         <van-field
@@ -44,6 +45,7 @@ function onSubmit() {
           type="password"
           name="password"
           label="密码"
+          size="large"
           :rules="[{ required: true, message: '请填写密码' }]"
         />
       </van-cell-group>
