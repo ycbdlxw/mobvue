@@ -1,9 +1,11 @@
 <script setup lang="ts">
 interface Props {
-  text: string
+  text?: string
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  text: "一个精心制作的移动端 H5 模板"
+})
 </script>
 
 <template>

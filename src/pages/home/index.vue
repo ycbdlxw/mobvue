@@ -6,7 +6,7 @@ import Cell from "./components/Cell.vue"
 
 <template>
   <div un-px-20px un-py-26px un-select-none>
-    <Description text="一个精心制作的移动端 H5 模板" un-pl-16px />
+    <Description un-pl-16px />
     <div un-mt-40px>
       <span un-pl-16px un-color-hex-969799 un-text-14px un-fw400>
         示例集合
