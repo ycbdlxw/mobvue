@@ -19,6 +19,7 @@ export const useUserStore = defineStore("user", () => {
   const getInfo = async () => {
     const { data } = await getCurrentUserApi()
     username.value = data.username
+    roles.value = data.roles
   }
 
   // 重置 Token
