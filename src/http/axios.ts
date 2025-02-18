@@ -1,6 +1,14 @@
 import type { AxiosInstance, AxiosRequestConfig } from "axios"
+import { useUserStore } from "@/pinia/stores/user"
+import { getToken } from "@@/utils/cache/cookies"
 import axios from "axios"
 import { get, merge } from "lodash-es"
+
+/** 退出登录并强制刷新页面（会重定向到登录页） */
+function logout() {
+  useUserStore().resetToken()
+  location.reload()
+}
 
 /** 创建请求实例 */
 function createInstance() {
@@ -33,7 +41,7 @@ function createInstance() {
           return apiData
         case 401:
           // 登录过期
-          return Promise.reject(new Error("登录过期"))
+          return logout()
         default:
           // 不是正确的 code
           return Promise.reject(new Error(apiData.message || "Error"))
@@ -50,6 +58,7 @@ function createInstance() {
         case 401:
           // 登录过期
           error.message = message || "登录过期"
+          logout()
           break
         case 403:
           error.message = message || "拒绝访问"
@@ -88,12 +97,15 @@ function createInstance() {
 /** 创建请求方法 */
 function createRequest(instance: AxiosInstance) {
   return <T>(config: AxiosRequestConfig): Promise<T> => {
+    const token = getToken()
     // 默认配置
     const defaultConfig: AxiosRequestConfig = {
       // 接口地址
       baseURL: import.meta.env.VITE_BASE_URL,
       // 请求头
       headers: {
+        // 携带 Token
+        "Authorization": token ? `Bearer ${token}` : undefined,
         "Content-Type": "application/json"
       },
       // 请求体
