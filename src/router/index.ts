@@ -74,6 +74,20 @@ export const demoRoutes: RouteRecordRaw[] = [
         }
       }
     }
+  },
+  {
+    path: "/permission",
+    component: () => import("@/pages/demo/permission.vue"),
+    name: "Permission",
+    meta: {
+      title: "按钮级权限",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: true
+        }
+      }
+    }
   }
 ]
 
