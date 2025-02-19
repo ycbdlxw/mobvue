@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useUserStore } from "@/pinia/stores/user"
+import faviconUrl from "/favicon.png?url"
 
 const router = useRouter()
 
@@ -21,7 +22,7 @@ function onLogout() {
       <van-cell size="large" is-link center @click="onClick">
         <template #title>
           <div un-flex-y-center un-gap-16px>
-            <van-image src="/favicon.png" un-w-44px un-h-44px />
+            <van-image :src="faviconUrl" un-w-44px un-h-44px />
             <div un-flex un-flex-col>
               <span un-fw-600>{{ userStore.username }}</span>
               <span un-text-14px un-color-hex-969799>个人资料</span>
