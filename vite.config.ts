@@ -7,6 +7,7 @@ import UnoCSS from "unocss/vite"
 import AutoImport from "unplugin-auto-import/vite"
 import Components from "unplugin-vue-components/vite"
 import { defineConfig, loadEnv } from "vite"
+import svgLoader from "vite-svg-loader"
 
 // Configuring Vite: https://cn.vite.dev/config
 export default defineConfig(({ mode }) => {
@@ -88,6 +89,23 @@ export default defineConfig(({ mode }) => {
     // 插件配置
     plugins: [
       vue(),
+      // 支持将 SVG 文件导入为 Vue 组件
+      svgLoader({
+        defaultImport: "url",
+        svgoConfig: {
+          plugins: [
+            {
+              name: "preset-default",
+              params: {
+                overrides: {
+                  // @see https://github.com/svg/svgo/issues/1128
+                  removeViewBox: false
+                }
+              }
+            }
+          ]
+        }
+      }),
       // 原子化 CSS
       UnoCSS(),
       // 自动按需导入 API
