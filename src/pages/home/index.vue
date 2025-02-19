@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { demoRoutes } from "@/router"
+import { demoRoutes, systemRoutes } from "@/router"
 import Description from "@@/components/Description.vue"
 import Cell from "./components/Cell.vue"
 </script>
@@ -12,7 +12,7 @@ import Cell from "./components/Cell.vue"
         示例集合
       </span>
       <Cell
-        v-for="route in demoRoutes"
+        v-for="route in [...demoRoutes, ...systemRoutes]"
         :key="route.path"
         :title="route.meta?.title || ''"
         :path="route.path"

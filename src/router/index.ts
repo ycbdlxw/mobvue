@@ -6,7 +6,7 @@ const VITE_PUBLIC_PATH = import.meta.env.VITE_PUBLIC_PATH
 
 const VITE_ROUTER_HISTORY = import.meta.env.VITE_ROUTER_HISTORY
 
-export const routes: RouteRecordRaw[] = [
+export const systemRoutes: RouteRecordRaw[] = [
   {
     path: "/403",
     component: () => import("@/pages/error/403.vue"),
@@ -23,7 +23,10 @@ export const routes: RouteRecordRaw[] = [
       title: "404"
     },
     alias: "/:pathMatch(.*)*"
-  },
+  }
+]
+
+export const routes: RouteRecordRaw[] = [
   {
     path: "/login",
     component: () => import("@/pages/login/index.vue"),
@@ -119,7 +122,7 @@ export const demoRoutes: RouteRecordRaw[] = [
 /** 路由实例 */
 export const router = createRouter({
   history: VITE_ROUTER_HISTORY === "hash" ? createWebHashHistory(VITE_PUBLIC_PATH) : createWebHistory(VITE_PUBLIC_PATH),
-  routes: [...routes, ...demoRoutes]
+  routes: [...systemRoutes, ...routes, ...demoRoutes]
 })
 
 // 注册路由导航守卫
