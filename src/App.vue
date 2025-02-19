@@ -16,5 +16,8 @@ watch(
 </script>
 
 <template>
-  <Layout />
+  <Layout v-if="userStore.username" />
+  <div v-else un-h-full un-flex-center>
+    <van-loading>加载中...</van-loading>
+  </div>
 </template>
