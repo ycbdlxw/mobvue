@@ -29,7 +29,7 @@ export function registerNavigationGuard(router: Router) {
     // 判断有无该页面权限
     if (to.meta.roles ? userStore.roles.some(role => to.meta.roles!.includes(role)) : true) return true
     // 无权限则进入 403 页面
-    return "403"
+    return "/403"
   })
   // 全局后置钩子
   router.afterEach((to) => {
