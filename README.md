@@ -128,11 +128,13 @@ pnpm lint
 
 📍 [纯一级路由设计](./src/router/index.ts) - 清晰且缓存友好
 
-🔒 [页面级权限控制](./src/router/guard.ts)、[按钮级权限控制](./src/pages/demo/permission.vue)
+🔒 权限控制 [页面级](./src/router/guard.ts)、[按钮级](./src/pages/demo/permission.vue)
 
 🫧 [白屏加载动画](./public/app-loading.css) - 首屏友好
 
 🧩 [布局系统](./src/layout) - 配置化的
+
+📱 移动端适配 [px2vw](./postcss.config.ts), 并且宽屏友好
 
 🎨 [拥抱原子化 CSS](./uno.config.ts)
 
