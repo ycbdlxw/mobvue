@@ -1,5 +1,5 @@
 import VConsole from "vconsole"
 
 export function installConsole() {
-  import.meta.env.VITE_CONSOLE && new VConsole()
+  (import.meta.env.VITE_CONSOLE === "true") && new VConsole()
 }
