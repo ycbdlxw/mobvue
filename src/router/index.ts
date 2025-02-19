@@ -116,6 +116,15 @@ export const demoRoutes: RouteRecordRaw[] = [
         }
       }
     }
+  },
+  {
+    path: "/no-permission-page",
+    component: () => {},
+    name: "NoPermissionPage",
+    meta: {
+      title: "因无权限而进不去的页面",
+      roles: ["SuperAdmin"]
+    }
   }
 ]
 
