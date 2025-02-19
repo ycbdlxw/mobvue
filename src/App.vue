@@ -13,11 +13,13 @@ watch(
     immediate: true
   }
 )
+
+const isLoading = computed(() => userStore.token && !userStore.username)
 </script>
 
 <template>
-  <Layout v-if="userStore.username" />
-  <div v-else un-h-full un-flex-center>
+  <div v-if="isLoading" un-h-full un-flex-center>
     <van-loading>加载中...</van-loading>
   </div>
+  <Layout v-else />
 </template>
