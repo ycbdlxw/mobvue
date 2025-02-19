@@ -1,4 +1,5 @@
 import type { Router } from "vue-router"
+import { useKeepAliveStore } from "@/pinia/stores/keep-alive"
 import { isWhiteList } from "@/router/whitelist"
 import { useTitle } from "@@/composables/useTitle"
 import { getToken } from "@@/utils/cache/cookies"
@@ -26,6 +27,12 @@ export function registerNavigationGuard(router: Router) {
   })
   // 全局后置钩子
   router.afterEach((to) => {
+    const keepAliveStore = useKeepAliveStore()
+    // 清除所有路由缓存
+    if (to.path === "/login") keepAliveStore.delAllCachedRoutes()
+    // 添加路由缓存
+    keepAliveStore.addCachedRoute(to)
+    // 设置标题
     setTitle(to.meta.title)
     NProgress.done()
   })
