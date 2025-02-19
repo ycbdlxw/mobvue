@@ -8,6 +8,23 @@ const VITE_ROUTER_HISTORY = import.meta.env.VITE_ROUTER_HISTORY
 
 export const routes: RouteRecordRaw[] = [
   {
+    path: "/403",
+    component: () => import("@/pages/error/403.vue"),
+    name: "403",
+    meta: {
+      title: "403"
+    }
+  },
+  {
+    path: "/404",
+    component: () => import("@/pages/error/404.vue"),
+    name: "404",
+    meta: {
+      title: "404"
+    },
+    alias: "/:pathMatch(.*)*"
+  },
+  {
     path: "/login",
     component: () => import("@/pages/login/index.vue"),
     name: "Login",
