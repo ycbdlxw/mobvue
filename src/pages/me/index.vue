@@ -35,7 +35,7 @@ function onLogout() {
       </van-cell>
     </van-cell-group>
     <van-cell-group un-mb-8px>
-      <van-cell title="🌗 黑暗模式" center>
+      <van-cell title="🌗 Dark Mode" center>
         <template #right-icon>
           <van-switch v-model="isDark" size="min(5.333vw, 40px)" />
         </template>
