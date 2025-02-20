@@ -126,6 +126,20 @@ export const demoRoutes: RouteRecordRaw[] = [
       title: "因无权限而进不去的页面",
       roles: ["SuperAdmin"]
     }
+  },
+  {
+    path: "/color",
+    component: () => import("@/pages/demo/color.vue"),
+    name: "Color",
+    meta: {
+      title: "灰色模式、色弱模式",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: true
+        }
+      }
+    }
   }
 ]
 

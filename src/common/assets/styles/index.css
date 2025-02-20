@@ -5,6 +5,16 @@ html {
   height: 100%;
 }
 
+/* 灰色模式 */
+html.grayscale-mode {
+  filter: grayscale(1);
+}
+
+/* 色弱模式 */
+html.colorblind-mode {
+  filter: invert(0.8);
+}
+
 body {
   height: 100%;
   color: var(--mobvue-body-text-color);
