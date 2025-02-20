@@ -5,7 +5,7 @@ import { useDark } from "@@/composables/useDark"
 
 const userStore = useUserStore()
 
-const { initDark } = useDark()
+const { isDark, initDark } = useDark()
 
 const isLoading = computed(() => userStore.token && !userStore.username)
 
@@ -23,8 +23,10 @@ initDark()
 </script>
 
 <template>
-  <div v-if="isLoading" un-h-full un-flex-center>
-    <van-loading>加载中...</van-loading>
-  </div>
-  <Layout v-else />
+  <van-config-provider :theme="isDark ? 'dark' : 'light'" un-h-full>
+    <van-loading v-if="isLoading" un-h-full un-flex-center>
+      加载中...
+    </van-loading>
+    <Layout v-else />
+  </van-config-provider>
 </template>
