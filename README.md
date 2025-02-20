@@ -140,9 +140,11 @@ pnpm lint
 
 🔧 [组件](https://github.com/unplugin/unplugin-vue-components) 和 [API](https://github.com/unplugin/unplugin-auto-import) 自动按需导入
 
-💪🏻 依然 [TypeScript](./tsconfig.json)
+🔎 [Husky](./.husky/pre-commit) + [lint-staged](./package.json) + [ESLint](./eslint.config.js) - 规范代码
 
-🔎 更多功能 - [路由缓存](./src/pinia/stores/keep-alive.ts), [带防御的水印](./src/common/composables/useWatermark.ts), [灰色模式、色弱模式](./src/common/composables/useGrayscaleAndColorblind.ts), [SVG Loader](https://github.com/jpkleemans/vite-svg-loader), [VConsole](./src/plugins/console.ts), [白屏加载动画](./public/app-loading.css), [单元测试](./tests)
+💪🏻 依然 [TypeScript](./tsconfig.json) - 严格模式且无 any
+
+👀 更多功能 - [路由缓存](./src/pinia/stores/keep-alive.ts)、[带防御的水印](./src/common/composables/useWatermark.ts)、[灰色模式, 色弱模式](./src/common/composables/useGrayscaleAndColorblind.ts)、[SVG Loader](https://github.com/jpkleemans/vite-svg-loader)、[VConsole](./src/plugins/console.ts)、[白屏加载动画](./public/app-loading.css)、[单元测试](./tests)
 
 ## 技术栈
 
