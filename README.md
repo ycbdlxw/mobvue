@@ -128,27 +128,27 @@ pnpm lint
 
 📍 [纯一级路由设计](./src/router/index.ts) - 清晰且缓存友好
 
-🔒 权限控制 [页面级](./src/router/guard.ts)、[按钮级](./src/pages/demo/permission.vue)
-
 📱 移动端适配 [px2vw](./postcss.config.ts) - 并且宽屏友好
 
 🧩 [布局系统](./src/layout) - 配置化的
 
+🔒 权限控制 [页面级](./src/router/guard.ts)、[按钮级](./src/pages/demo/permission.vue)
+
 🌗 主题模式 [Dark Mode](./src/common/assets/styles/variables.css)
 
-🫧 [白屏加载动画](./public/app-loading.css) - 首屏友好
-
-🎨 [拥抱原子化 CSS](./uno.config.ts)
+🫧 [拥抱原子化 CSS](./uno.config.ts)
 
 🔧 [组件](https://github.com/unplugin/unplugin-vue-components) 和 [API](https://github.com/unplugin/unplugin-auto-import) 自动按需导入
 
-🔎 [单元测试护航](./tests)
-
 💪🏻 依然 [TypeScript](./tsconfig.json)
+
+🔎 更多功能 - [路由缓存](./src/pinia/stores/keep-alive.ts), [带防御的水印](./src/common/composables/useWatermark.ts), [灰色模式、色弱模式](./src/common/composables/useGrayscaleAndColorblind.ts), [SVG Loader](https://github.com/jpkleemans/vite-svg-loader), [VConsole](./src/plugins/console.ts), [白屏加载动画](./public/app-loading.css), [单元测试](./tests)
 
 ## 技术栈
 
 **Vue3**：采用 Vue3 + script setup 最新的 Vue3 组合式 API
+
+**Vant**：轻量、可定制的移动端 Vue 组件库
 
 **Pinia**: 传说中的 Vuex5
 
