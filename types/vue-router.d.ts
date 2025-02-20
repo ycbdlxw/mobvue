@@ -48,6 +48,11 @@ declare module "vue-router" {
          */
         icon?: string
       }
+      /**
+       * @description 是否显示 Footer
+       * @default false
+       */
+      footer?: boolean
     }
   }
 }

@@ -67,7 +67,8 @@ export const routes: RouteRecordRaw[] = [
         tabbar: {
           showTabbar: true,
           icon: "user-o"
-        }
+        },
+        footer: true
       }
     }
   }
