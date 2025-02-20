@@ -19,7 +19,8 @@ export default defineConfig({
   // 自定义主题
   theme: {
     colors: {
-      primary: "var(--mobvue-primary-color)"
+      primary: "var(--mobvue-primary-color)",
+      bg: "var(--mobvue-bg-color)"
     }
   },
   // 自定义规则

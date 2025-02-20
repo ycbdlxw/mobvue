@@ -11,20 +11,7 @@ body {
   background-color: var(--mobvue-body-bg-color);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family:
-    Open Sans,
-    -apple-system,
-    BlinkMacSystemFont,
-    Helvetica Neue,
-    Helvetica,
-    Segoe UI,
-    Arial,
-    Roboto,
-    PingFang SC,
-    miui,
-    Hiragino Sans GB,
-    Microsoft Yahei,
-    sans-serif;
+  font-family: var(--van-base-font);
   /* 禁止 iOS 和 macOS 系统默认的橡皮筋效果 */
   overflow: hidden;
 }
