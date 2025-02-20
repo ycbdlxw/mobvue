@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import Layout from "@/layout/index.vue"
 import { useUserStore } from "@/pinia/stores/user"
+import { useDark } from "@@/composables/useDark"
 
 const userStore = useUserStore()
+
+const { initDark } = useDark()
+
+const isLoading = computed(() => userStore.token && !userStore.username)
 
 watch(
   () => userStore.token,
@@ -14,7 +19,7 @@ watch(
   }
 )
 
-const isLoading = computed(() => userStore.token && !userStore.username)
+initDark()
 </script>
 
 <template>
