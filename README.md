@@ -16,8 +16,8 @@ MobVue 是一个精心制作的移动端 H5 模板，基于 Vue3、Vite、TypeSc
 > [!NOTE]
 > 为爱发电！所有源码均免费开源，如果对你有帮助，欢迎点个 Star 支持一下！
 
-> [!WARNING]
-> 作者正在努力开发中...敬请期待 1.0 版本发布！
+> [!TIP]
+> 正式推出付费服务，如果不想自己动手，但想移除 TS 或其他模块？试试懒人套餐！[点击看看](https://github.com/un-pany/mobvue/issues/2)
 
 ## 使用
 
@@ -83,6 +83,9 @@ pnpm preview
 ```bash
 # 代码校验与格式化
 pnpm lint
+
+# 单元测试
+pnpm test
 ```
 
 </details>
@@ -116,7 +119,11 @@ pnpm lint
 
 **在线预览**：[github-pages](https://un-pany.github.io/mobvue)
 
+**文档教程**：[链接](https://juejin.cn/column/7472609448201666599)
+
 **国内仓库**：[gitee](https://gitee.com/un-pany/mobvue)
+
+**交流群**：[查看进群方式](https://github.com/un-pany/mobvue/issues/3)
 
 **捐赠**：[请作者喝咖啡](https://github.com/un-pany/mobvue/issues/1)
 
