@@ -2,6 +2,7 @@
 
 import { resolve } from "node:path"
 import { VantResolver } from "@vant/auto-import-resolver"
+import legacy from "@vitejs/plugin-legacy"
 import vue from "@vitejs/plugin-vue"
 import UnoCSS from "unocss/vite"
 import AutoImport from "unplugin-auto-import/vite"
@@ -89,6 +90,8 @@ export default defineConfig(({ mode }) => {
     // 插件配置
     plugins: [
       vue(),
+      // 为打包后的文件提供传统浏览器兼容性支持，配置继承自 browserslist
+      legacy(),
       // 支持将 SVG 文件导入为 Vue 组件
       svgLoader({
         defaultImport: "url",
