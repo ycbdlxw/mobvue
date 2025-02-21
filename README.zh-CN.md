@@ -141,6 +141,8 @@ pnpm test
 
 📱 移动端适配 [px2vw](./postcss.config.ts) - 并且宽屏友好
 
+🌐 浏览器适配 [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy) + [autoprefixer](https://github.com/postcss/autoprefixer) + [browserslist](https://github.com/browserslist/browserslist) - 兼容多种浏览器和低版本浏览器
+
 🧩 [布局系统](./src/layout) - 配置化的
 
 🔒 权限控制 [页面级](./src/router/guard.ts)、[按钮级](./src/pages/demo/permission.vue)

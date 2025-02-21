@@ -141,6 +141,8 @@ pnpm test
 
 📱 Mobile Adaptation [px2vw](./postcss.config.ts) - Also Wide-Screen Friendly
 
+🌐 Browser Compatibility [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy) + [autoprefixer](https://github.com/postcss/autoprefixer) + [browserslist](https://github.com/browserslist/browserslist) - Compatible with multiple browsers and lower versions
+
 🧩 [Layout System](./src/layout) - Configurable
 
 🔒 Permission Control [Page Level](./src/router/guard.ts), [Button Level](./src/pages/demo/permission.vue)
