@@ -11,7 +11,7 @@
 
 ## Introduction
 
-MobVue is a well-crafted mobile H5 template, built with popular technologies such as Vue3, Vite, TypeScript, and Vant
+MobVue is a well-crafted mobile web app template, built with popular technologies such as Vue3, Vite, TypeScript, and Vant
 
 ## Notifications
 
