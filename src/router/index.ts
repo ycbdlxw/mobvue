@@ -157,6 +157,34 @@ export const emptyDemoRoutes: RouteRecordRaw[] = [
         }
       }
     }
+  },
+  {
+    path: "/markdown",
+    component: () => import("@/pages/demo/markdown.vue"),
+    name: "Markdown",
+    meta: {
+      title: "Markdown 解析",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: true
+        }
+      }
+    }
+  },
+  {
+    path: "/chart",
+    component: () => import("@/pages/demo/chart.vue"),
+    name: "Chart",
+    meta: {
+      title: "图表",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: true
+        }
+      }
+    }
   }
 ]
 
