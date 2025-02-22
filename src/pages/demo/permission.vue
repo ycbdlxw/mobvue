@@ -13,7 +13,7 @@ function onChange(name: string) {
 </script>
 
 <template>
-  <div>
+  <div un-mb-20px>
     <NoticeBar text="基于权限指令、权限函数实现的按钮级控制" />
     <van-radio-group v-model="checked" @change="onChange">
       <van-cell-group title="切换用户" inset>

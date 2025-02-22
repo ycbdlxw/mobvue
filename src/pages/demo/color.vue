@@ -13,7 +13,7 @@ function onChange(name: Mode) {
 </script>
 
 <template>
-  <div>
+  <div un-mb-20px>
     <NoticeBar text="针对哀悼场景和色弱色盲人群" />
     <van-radio-group v-model="checked" @change="onChange">
       <van-cell-group title="切换模式" inset>
