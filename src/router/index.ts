@@ -6,6 +6,7 @@ const VITE_PUBLIC_PATH = import.meta.env.VITE_PUBLIC_PATH
 
 const VITE_ROUTER_HISTORY = import.meta.env.VITE_ROUTER_HISTORY
 
+/** 系统页面 */
 export const systemRoutes: RouteRecordRaw[] = [
   {
     path: "/403",
@@ -26,6 +27,7 @@ export const systemRoutes: RouteRecordRaw[] = [
   }
 ]
 
+/** 业务页面 */
 export const routes: RouteRecordRaw[] = [
   {
     path: "/login",
@@ -74,6 +76,7 @@ export const routes: RouteRecordRaw[] = [
   }
 ]
 
+/** 示例页面 */
 export const demoRoutes: RouteRecordRaw[] = [
   {
     path: "/keep-alive",
@@ -143,6 +146,7 @@ export const demoRoutes: RouteRecordRaw[] = [
   }
 ]
 
+/** 空示例页面 */
 export const emptyDemoRoutes: RouteRecordRaw[] = [
   {
     path: "/i18n",
