@@ -140,6 +140,20 @@ export const demoRoutes: RouteRecordRaw[] = [
         }
       }
     }
+  },
+  {
+    path: "/i18n",
+    component: () => import("@/pages/demo/i18n.vue"),
+    name: "I18n",
+    meta: {
+      title: "国际化 / 多语言",
+      layout: {
+        navBar: {
+          showNavBar: true,
+          showLeftArrow: true
+        }
+      }
+    }
   }
 ]
 
