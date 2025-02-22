@@ -7,7 +7,7 @@ const router = useRouter()
 
 const userStore = useUserStore()
 
-const { isDark } = useDark()
+const { isDark, changeDark } = useDark()
 
 function onClick() {
   showToast("更多功能，敬请期待 ~")
@@ -37,7 +37,7 @@ function onLogout() {
     <van-cell-group un-mb-8px>
       <van-cell title="🌗 Dark Mode 黑暗模式" center>
         <template #right-icon>
-          <van-switch v-model="isDark" size="min(5.333vw, 40px)" />
+          <van-switch :model-value="isDark" size="min(5.333vw, 40px)" @click="changeDark" />
         </template>
       </van-cell>
       <van-cell title="📚 Documentation 文档教程" is-link url="https://juejin.cn/column/7472609448201666599" />

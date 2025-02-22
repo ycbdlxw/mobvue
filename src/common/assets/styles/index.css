@@ -1,5 +1,7 @@
 /* 全局 CSS 变量 */
 @import url("./variables.css");
+/* View Transition */
+@import url("./view-transition.css");
 
 html {
   height: 100%;
