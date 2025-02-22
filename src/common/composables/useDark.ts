@@ -3,19 +3,19 @@ import { setCssVar } from "@@/utils/css"
 
 const isDark = ref<boolean>(getIsDark() === "true")
 
+function _handler() {
+  isDark.value = !isDark.value
+}
+
 function changeDark({ clientX, clientY }: MouseEvent) {
   const maxRadius = Math.hypot(
     Math.max(clientX, window.innerWidth - clientX),
     Math.max(clientY, window.innerHeight - clientY)
   )
-  const documentElement = document.documentElement
-  setCssVar("--mobvue-dark-x", `${clientX}px`, documentElement)
-  setCssVar("--mobvue-dark-y", `${clientY}px`, documentElement)
-  setCssVar("--mobvue-dark-r", `${maxRadius}px`, documentElement)
-  const handler = () => {
-    isDark.value = !isDark.value
-  }
-  document.startViewTransition ? document.startViewTransition(handler) : handler()
+  setCssVar("--mobvue-dark-x", `${clientX}px`)
+  setCssVar("--mobvue-dark-y", `${clientY}px`)
+  setCssVar("--mobvue-dark-r", `${maxRadius}px`)
+  document.startViewTransition ? document.startViewTransition(_handler) : _handler()
 }
 
 /** 初始化 */
