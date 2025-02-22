@@ -140,7 +140,10 @@ export const demoRoutes: RouteRecordRaw[] = [
         }
       }
     }
-  },
+  }
+]
+
+export const emptyDemoRoutes: RouteRecordRaw[] = [
   {
     path: "/i18n",
     component: () => import("@/pages/demo/i18n.vue"),
@@ -160,7 +163,7 @@ export const demoRoutes: RouteRecordRaw[] = [
 /** 路由实例 */
 export const router = createRouter({
   history: VITE_ROUTER_HISTORY === "hash" ? createWebHashHistory(VITE_PUBLIC_PATH) : createWebHistory(VITE_PUBLIC_PATH),
-  routes: [...systemRoutes, ...routes, ...demoRoutes]
+  routes: [...systemRoutes, ...routes, ...demoRoutes, ...emptyDemoRoutes]
 })
 
 // 注册路由导航守卫
