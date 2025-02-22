@@ -19,7 +19,7 @@ import Title from "./components/Title.vue"
       />
     </div>
     <div un-my-20px>
-      <Title text="空示例集合" />
+      <Title text="更多示例" />
       <Cell
         v-for="route in emptyDemoRoutes"
         :key="route.path"
