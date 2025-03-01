@@ -125,6 +125,8 @@ pnpm test
 
 **文档教程**：[链接](https://juejin.cn/column/7472609448201666599)
 
+**后台管理系统**：[v3-admin-vite](https://github.com/un-pany/v3-admin-vite)
+
 **国内仓库**：[gitee](https://gitee.com/un-pany/mobvue)
 
 **交流群**：[查看进群方式](https://github.com/un-pany/mobvue/issues/3)

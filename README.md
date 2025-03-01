@@ -125,6 +125,8 @@ pnpm test
 
 **Documentation and Tutorials**：[link](https://juejin.cn/column/7472609448201666599)
 
+**Backend Management System**：[v3-admin-vite](https://github.com/un-pany/v3-admin-vite)
+
 **Chinese Repository**：[gitee](https://gitee.com/un-pany/mobvue)
 
 **Chat Group**：[check how to join](https://github.com/un-pany/mobvue/issues/3)
