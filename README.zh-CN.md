@@ -167,7 +167,7 @@ pnpm test
 
 **Vant**：轻量、可定制的移动端 Vue 组件库
 
-**Pinia**: 传说中的 Vuex5
+**Pinia**：传说中的 Vuex5
 
 **Vite**：真的很快
 
