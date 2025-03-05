@@ -153,6 +153,8 @@ pnpm test
 
 🫧 [拥抱原子化 CSS](./uno.config.ts)
 
+📲 [PWA](https://github.com/antfu/vite-plugin-pwa) - 渐进式 Web 应用
+
 🔧 [组件](https://github.com/unplugin/unplugin-vue-components) 和 [API](https://github.com/unplugin/unplugin-auto-import) 自动按需导入
 
 🔎 [Husky](./.husky/pre-commit) + [lint-staged](./package.json) + [ESLint](./eslint.config.js) - 规范代码

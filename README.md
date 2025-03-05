@@ -153,6 +153,8 @@ pnpm test
 
 🫧 [Embrace Atomic CSS](./uno.config.ts)
 
+📲 [PWA](https://github.com/antfu/vite-plugin-pwa) - Progressive Web App
+
 🔧 [Components](https://github.com/unplugin/unplugin-vue-components) and [API](https://github.com/unplugin/unplugin-auto-import) Auto Import on Demand
 
 🔎 [Husky](./.husky/pre-commit) + [lint-staged](./package.json) + [ESLint](./eslint.config.js) - Code Standardization
