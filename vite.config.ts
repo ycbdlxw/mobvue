@@ -13,7 +13,7 @@ import svgLoader from "vite-svg-loader"
 
 // Configuring Vite: https://cn.vite.dev/config
 export default defineConfig(({ mode }) => {
-  const { VITE_PUBLIC_PATH } = loadEnv(mode, process.cwd(), "") as ImportMetaEnv
+  const { VITE_PUBLIC_PATH, VITE_APP_TITLE, VITE_PWA_DESCRIPTION, VITE_PWA_THEME_COLOR } = loadEnv(mode, process.cwd(), "") as ImportMetaEnv
   return {
     // 开发或打包构建时用到的公共基础路径
     base: VITE_PUBLIC_PATH,
@@ -127,10 +127,10 @@ export default defineConfig(({ mode }) => {
       VitePWA({
         includeAssets: ["favicon.png", "apple-touch-icon.png"],
         manifest: {
-          name: "MobVue",
-          short_name: "MobVue",
-          description: "A crafted mobile template",
-          theme_color: "#ffffff",
+          name: VITE_APP_TITLE,
+          short_name: VITE_APP_TITLE,
+          description: VITE_PWA_DESCRIPTION,
+          theme_color: VITE_PWA_THEME_COLOR,
           icons: [
             {
               src: "pwa-192x192.png",
