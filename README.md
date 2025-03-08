@@ -179,7 +179,7 @@ pnpm test
 
 **pnpm**: A faster, disk-space-saving package manager
 
-**ESlint**: Code linting and formatting
+**ESLint**: Code linting and formatting
 
 **Axios**: Sends network requests
 
