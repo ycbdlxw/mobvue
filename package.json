@@ -26,7 +26,7 @@
     "vant": "4.9.17",
     "vconsole": "3.15.1",
     "vue": "3.5.13",
-    "vue-i18n": "11.1.1",
+    "vue-i18n": "11.1.2",
     "vue-router": "4.5.0"
   },
   "devDependencies": {
@@ -40,10 +40,10 @@
     "@vitejs/plugin-legacy": "6.0.2",
     "@vitejs/plugin-vue": "5.2.1",
     "@vue/test-utils": "2.4.6",
-    "autoprefixer": "10.4.20",
+    "autoprefixer": "10.4.21",
     "eslint": "9.22.0",
     "eslint-plugin-format": "1.0.1",
-    "happy-dom": "17.4.0",
+    "happy-dom": "17.4.3",
     "husky": "9.1.7",
     "lint-staged": "15.4.3",
     "nprogress": "0.2.0",
