@@ -161,7 +161,7 @@ pnpm test
 
 💪🏻 Still [TypeScript](./tsconfig.json) - Strict Mode with No `any`
 
-👀 More Features - [Route Cache](./src/pinia/stores/keep-alive.ts), [Defensive Watermark](./src/common/composables/useWatermark.ts), [Grayscale and Colorblind Mode](./src/common/composables/useGrayscaleAndColorblind.ts), [SVG Loader](https://github.com/jpkleemans/vite-svg-loader), [VConsole](./src/plugins/console.ts), [White Screen Loading Animation](./public/app-loading.css), [Unit Tests](./tests)
+👀 More Features - [Route Cache](./src/pinia/stores/keep-alive.ts), [Defensive Watermark](./src/common/composables/useWatermark.ts), [Grayscale and Colorblind Mode](./src/common/composables/useGrayscaleAndColorblind.ts), [SVG Loader](https://github.com/jpkleemans/vite-svg-loader), [VConsole](./src/plugins/console.ts), [White Screen Loading Animation](./public/app-loading.css), [Unit Tests](./tests), [i18n](./src/plugins/i18n.ts)
 
 ## Tech Stack
 
