@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@vant/touch-emulator": "1.4.0",
-    "axios": "1.8.2",
+    "axios": "1.8.3",
     "dayjs": "1.11.13",
     "js-cookie": "3.0.5",
     "lodash-es": "4.17.21",
@@ -30,7 +30,7 @@
     "vue-router": "4.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.8.1",
+    "@antfu/eslint-config": "4.10.0",
     "@types/js-cookie": "3.0.6",
     "@types/lodash-es": "4.17.12",
     "@types/node": "22.13.10",
@@ -43,7 +43,7 @@
     "autoprefixer": "10.4.21",
     "eslint": "9.22.0",
     "eslint-plugin-format": "1.0.1",
-    "happy-dom": "17.4.3",
+    "happy-dom": "17.4.4",
     "husky": "9.1.7",
     "lint-staged": "15.4.3",
     "nprogress": "0.2.0",
