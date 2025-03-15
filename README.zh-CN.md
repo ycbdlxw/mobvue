@@ -161,7 +161,7 @@ pnpm test
 
 💪🏻 依然 [TypeScript](./tsconfig.json) - 严格模式且无 `any`
 
-👀 更多功能 - [路由缓存](./src/pinia/stores/keep-alive.ts)、[带防御的水印](./src/common/composables/useWatermark.ts)、[灰色模式, 色弱模式](./src/common/composables/useGrayscaleAndColorblind.ts)、[SVG Loader](https://github.com/jpkleemans/vite-svg-loader)、[VConsole](./src/plugins/console.ts)、[白屏加载动画](./public/app-loading.css)、[单元测试](./tests)、[i18n](./src/plugins/i18n.ts)
+👀 更多功能 - [路由缓存](./src/pinia/stores/keep-alive.ts)、[带防御的水印](./src/common/composables/useWatermark.ts)、[灰色和色弱模式](./src/common/composables/useGrayscaleAndColorblind.ts)、[SVG Loader](https://github.com/jpkleemans/vite-svg-loader)、[VConsole](./src/plugins/console.ts)、[白屏加载动画](./public/app-loading.css)、[单元测试](./tests)、[国际化](./src/plugins/i18n.ts)
 
 ## 技术栈
 
