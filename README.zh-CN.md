@@ -224,7 +224,7 @@ bun run test
 
 **UnoCSS**：具有高性能且极具灵活性的即时原子化 CSS 引擎
 
-**Bun**：是一款快速的 JavaScript 运行时
+**Bun**：一款快速的 JavaScript 运行时
 
 ## 项目预览图
 

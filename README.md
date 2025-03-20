@@ -224,7 +224,7 @@ bun run test
 
 **UnoCSS**: A high-performance, flexible atomic CSS engine
 
-**Bun**：a fast JavaScript runtime
+**Bun**：A fast JavaScript runtime
 
 ## Project Preview Image
 
