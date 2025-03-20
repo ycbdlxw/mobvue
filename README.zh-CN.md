@@ -32,6 +32,7 @@ MobVue 是一个精心制作的移动端 H5 模板，基于 Vue3、Vite、TypeSc
 - 安装 `.vscode/extensions.json` 文件中推荐的插件
 - `node` 20.x 或 22+
 - `pnpm` 9.x 或 10+
+- `bun` 最新的
 
 </details>
 
@@ -39,6 +40,8 @@ MobVue 是一个精心制作的移动端 H5 模板，基于 Vue3、Vite、TypeSc
 <summary>本地开发</summary>
 
 <br>
+
+使用 `Node` + `pnpm`
 
 ```bash
 # 安装依赖
@@ -48,12 +51,22 @@ pnpm i
 pnpm dev
 ```
 
+使用 `Bun`
+
+```bash
+bun i
+
+bun run dev
+```
+
 </details>
 
 <details>
 <summary>打包构建</summary>
 
 <br>
+
+使用 `Node` + `pnpm`
 
 ```bash
 # 打包构建预发布环境
@@ -63,6 +76,14 @@ pnpm build:staging
 pnpm build
 ```
 
+使用 `Bun`
+
+```bash
+bun run build:staging
+
+bun run build
+```
+
 </details>
 
 <details>
@@ -70,9 +91,17 @@ pnpm build
 
 <br>
 
+使用 `Node` + `pnpm`
+
 ```bash
 # 先执行打包构建命令生成 dist 目录后再执行以下预览命令
 pnpm preview
+```
+
+使用 `Bun`
+
+```bash
+bun run preview
 ```
 
 </details>
@@ -82,12 +111,22 @@ pnpm preview
 
 <br>
 
+使用 `Node` + `pnpm`
+
 ```bash
 # 代码校验与格式化
 pnpm lint
 
 # 单元测试
 pnpm test
+```
+
+使用 `Bun`
+
+```bash
+bun run lint
+
+bun run test
 ```
 
 </details>
@@ -184,6 +223,8 @@ pnpm test
 **Axios**：发送网络请求（已封装好）
 
 **UnoCSS**：具有高性能且极具灵活性的即时原子化 CSS 引擎
+
+**Bun**：是一款快速的 JavaScript 运行时
 
 ## 项目预览图
 

@@ -32,6 +32,7 @@ MobVue is a well-crafted mobile web app template, built with popular technologie
 - Install the recommended plugins in the `.vscode/extensions.json` file
 - `node` 20.x or 22+
 - `pnpm` 9.x or 10+
+- `bun` latest
 
 </details>
 
@@ -39,6 +40,8 @@ MobVue is a well-crafted mobile web app template, built with popular technologie
 <summary>Local Development</summary>
 
 <br>
+
+Using `Node` + `pnpm`
 
 ```bash
 # Install dependencies
@@ -48,12 +51,22 @@ pnpm i
 pnpm dev
 ```
 
+Using `Bun`
+
+```bash
+bun i
+
+bun run dev
+```
+
 </details>
 
 <details>
 <summary>Build</summary>
 
 <br>
+
+Using `Node` + `pnpm`
 
 ```bash
 # Build for the staging environment
@@ -63,6 +76,14 @@ pnpm build:staging
 pnpm build
 ```
 
+Using `Bun`
+
+```bash
+bun run build:staging
+
+bun run build
+```
+
 </details>
 
 <details>
@@ -70,9 +91,17 @@ pnpm build
 
 <br>
 
+Using `Node` + `pnpm`
+
 ```bash
 # Execute the build command first to generate the dist directory, then run the preview command
 pnpm preview
+```
+
+Using `Bun`
+
+```bash
+bun run preview
 ```
 
 </details>
@@ -82,12 +111,22 @@ pnpm preview
 
 <br>
 
+Using `Node` + `pnpm`
+
 ```bash
 # Code linting and formatting
 pnpm lint
 
 # Unit tests
 pnpm test
+```
+
+Using `Bun`
+
+```bash
+bun run lint
+
+bun run test
 ```
 
 </details>
@@ -184,6 +223,8 @@ pnpm test
 **Axios**: Sends network requests
 
 **UnoCSS**: A high-performance, flexible atomic CSS engine
+
+**Bun**：a fast JavaScript runtime
 
 ## Project Preview Image
 
