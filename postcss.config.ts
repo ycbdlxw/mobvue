@@ -26,7 +26,7 @@ export default {
         ".van-icon": "font"
       },
       // 忽略的属性值
-      valueBlackList: ["1px"],
+      valueBlackList: [],
       // 忽略的目录或文件
       exclude: [],
       // 包含块是根元素的选择器列表
