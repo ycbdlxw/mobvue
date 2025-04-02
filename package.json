@@ -47,7 +47,7 @@
     "husky": "9.1.7",
     "lint-staged": "15.5.0",
     "nprogress": "0.2.0",
-    "postcss-mobile-forever": "4.4.0",
+    "postcss-mobile-forever": "5.0.0",
     "typescript": "5.8.2",
     "unplugin-auto-import": "19.1.2",
     "unplugin-vue-components": "28.4.1",

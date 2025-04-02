@@ -100,8 +100,8 @@ importers:
         specifier: 0.2.0
         version: 0.2.0
       postcss-mobile-forever:
-        specifier: 4.4.0
-        version: 4.4.0(postcss@8.5.3)
+        specifier: 5.0.0
+        version: 5.0.0(postcss@8.5.3)
       typescript:
         specifier: 5.8.2
         version: 5.8.2
@@ -3300,8 +3300,8 @@ packages:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
     engines: {node: '>= 0.4'}
 
-  postcss-mobile-forever@4.4.0:
-    resolution: {integrity: sha512-uv+GJL9QwaUhGYDSDWEcGFZ9HNylts+0yYFYzTOTetBNJBi9jEBEqygP2Q2vX1SHPRuXA6pOlN0RMYI5AWWKKQ==}
+  postcss-mobile-forever@5.0.0:
+    resolution: {integrity: sha512-/kkhxMAd8kNZYeOFaTjhOx7hdfKE7AhJNU7SmlrxJV9fYqbLGrcGQMwXO4aWUvtxBseXwF2+qSMv3j/AZhitNA==}
     peerDependencies:
       postcss: ^8.0.0
 
@@ -7796,7 +7796,7 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-mobile-forever@4.4.0(postcss@8.5.3):
+  postcss-mobile-forever@5.0.0(postcss@8.5.3):
     dependencies:
       postcss: 8.5.3
 

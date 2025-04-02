@@ -20,17 +20,17 @@ export default {
       // 需要转换的属性
       propList: ["*"],
       // 忽略的选择器
-      selectorBlackList: [".ignore", "keep-px"],
+      selectorBlackList: [".ignore", ".keep-px"],
       // 忽略的属性
       propertyBlackList: {
         ".van-icon": "font"
       },
       // 忽略的属性值
-      valueBlackList: [],
+      valueBlackList: ["1px"],
       // 忽略的目录或文件
       exclude: [],
       // 包含块是根元素的选择器列表
-      rootContainingBlockSelectorList: ["van-tabbar", "van-popup"]
+      rootContainingBlockSelectorList: [".van-tabbar", ".van-popup"]
     }
   }
 }
